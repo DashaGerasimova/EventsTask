@@ -22,4 +22,6 @@
 
 database.yml
 
+/test/*
+
 .byebug_history
