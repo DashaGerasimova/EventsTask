@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Events</h1>
+<h1><%= t('hello') %></h1>
 
 <table>
   <thead>
@@ -28,4 +29,7 @@
 
 <br>
 
+
+<%= link_to("ru", events_path(locale: :ru)) %>
+<%= link_to("en", events_path(locale: :en)) %>
 <%= link_to 'New Event', new_event_path %>

@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 # email validator
 gem 'validates_email_format_of'
+#support for additional languages
+ gem 'rails-i18n'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
