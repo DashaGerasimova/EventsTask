@@ -14,5 +14,9 @@
   <%= @event.repeat %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
+<p>
+  <strong>Author:</strong>
+  <%= @event.user.email %>
+</p>
+
 <%= link_to 'Back', events_path %>

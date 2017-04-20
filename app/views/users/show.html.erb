@@ -5,10 +5,31 @@
   |
   <strong><%= t'fullname' %>:</strong>
   <%= @user.fullname || t('nofullname') %>
+
+  <%= link_to t('Edit'), edit_user_path(@user.id) %>
+  <%= link_to t('Logout'), logout_path, method: "delete" %>
 </div>
 
 <div class="events_list">
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Event date</th>
+        <th>Repeat</th>
+      </tr>
+    </thead>
 
+    <tbody>
+      <% @user.events.each do |event| %>
+        <tr>
+          <td><%= link_to event.title, edit_event_path(event) %></td>
+          <td><%= event.event_date %></td>
+          <td><%= event.repeat %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <%= link_to t('New Event'), new_event_path %>
 </div>
 
-<%= link_to t('Edit'), edit_user_path(@user.id) %>

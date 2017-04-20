@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :events
 
   resources :users, only: [:new, :create, :edit, :show, :update]
-  get "/profile" => "users#show"
+  get "/profile" => "users#show", as: "profile"
 
   get "/login" => "sessions#new", as: "login"
   delete "/logout" => "sessions#destroy", as: "logout"

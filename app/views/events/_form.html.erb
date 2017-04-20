@@ -18,12 +18,12 @@
 
   <div class="field">
     <%= f.label :event_date %>
-    <%= f.date_select :event_date %>
+    <%= f.date_select :event_date, start_year: Date.today.year, end_year: Date.today.year + 20 %>
   </div>
 
   <div class="field">
     <%= f.label :repeat %>
-    <%= f.text_field :repeat %>
+    <%= f.select :repeat, options_for_select(["every day", "every week", "every month", "every year"]) %>
   </div>
 
   <div class="actions">

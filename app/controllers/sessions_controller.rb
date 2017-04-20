@@ -15,6 +15,6 @@ class SessionsController < ApplicationController
 
   def destroy
     reset_session
-    redirect_to 'login', notice: t('Logged out')
+    redirect_to '/login', notice: t('Logged out')
   end
 end

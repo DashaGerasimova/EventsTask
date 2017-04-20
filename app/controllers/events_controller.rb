@@ -27,6 +27,8 @@ class EventsController < ApplicationController
   def create
     @event = Event.new(event_params)
 
+    current_user.events << @event
+
     respond_to do |format|
       if @event.save
         format.html { redirect_to @event, notice: 'Event was successfully created.' }
@@ -57,7 +59,7 @@ class EventsController < ApplicationController
   def destroy
     @event.destroy
     respond_to do |format|
-      format.html { redirect_to events_url, notice: 'Event was successfully destroyed.' }
+      format.html { redirect_to profile_path, notice: 'Event was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
