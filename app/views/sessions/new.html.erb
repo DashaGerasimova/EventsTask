@@ -1,17 +1,26 @@
-<p id="notice"><%= notice %></p>
-<p id="alert"><%= alert %></p>
-<div>  
+
+<div class="login_page">  
+
   <h1>Welcome!</h1>
+
   <%= form_for(:user, url: sessions_path) do |f| %>
 
-    <div class="field"><%= f.label :email %> <br> <%= f.text_field :email %></div>
+    <div class="field">
+      <%= f.label :email %>
+      <br> 
+      <%= f.text_field :email %>
+    </div>
 
-    <div class="field"><%= f.label t 'password' %> <br> <%= f.text_field :password %></div>
+    <div class="field">
+      <%= f.label t 'password' %> 
+      <br> 
+      <%= f.text_field :password %>
+    </div>
 
     <div class="actions">
-        <%= f.submit t'Log in' %> <%= t'or' %> <%= link_to "Sign up", new_user_path  %>
+        <%= f.submit t'Log in' %> <%= t'or' %> <%= link_to t('Sign up'), new_user_path, class: "button_class"  %>
     </div>
- 
 
   <% end  %>
+  
 </div>

@@ -30,8 +30,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
   password: "Password"
   fullname: "Full name"
   Log in: "Log In"
   Sign up: "Sign Up"
+  or: "or"
+  nofullname: "no full name"
+  confirm: "Are you sure?"
+  

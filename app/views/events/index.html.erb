@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Events</h1>
 <h1><%= t('hello') %></h1>
@@ -21,7 +20,7 @@
         <td><%= event.repeat %></td>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: t('confirm') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,7 +28,4 @@
 
 <br>
 
-
-<%= link_to("ru", events_path(locale: :ru)) %>
-<%= link_to("en", events_path(locale: :en)) %>
 <%= link_to 'New Event', new_event_path %>

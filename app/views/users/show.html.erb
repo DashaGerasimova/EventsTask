@@ -1,19 +1,14 @@
-<p id="notice"><%= notice %></p>
 
-<p>
+<div class="user_info">
   <strong>email:</strong>
   <%= @user.email %>
-</p>
-
-<p>
-  <strong><%= t'password' %>:</strong>
-  <%= @user.password %>
-</p>
-
-<p>
+  |
   <strong><%= t'fullname' %>:</strong>
-  <%= @user.fullname %>
-</p>
+  <%= @user.fullname || t('nofullname') %>
+</div>
 
+<div class="events_list">
 
+</div>
 
+<%= link_to t('Edit'), edit_user_path(@user.id) %>

@@ -9,6 +9,17 @@
   </head>
 
   <body>
+
+    <p id="notice"><%= notice %></p>
+    <p id="alert"><%= alert %></p>
+
+    <div class="language_buttons">
+      <%= link_to("ru", locale: :ru) %>|
+	  <%= link_to("en", locale: :en) %>
+    </div>
+
     <%= yield %>
+
+    
   </body>
 </html>
