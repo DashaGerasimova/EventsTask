@@ -12,21 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %>
+    <%= f.label t('Title') %>
     <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <%= f.label :event_date %>
+    <%= f.label t('Event date') %>
     <%= f.date_select :event_date, start_year: Date.today.year, end_year: Date.today.year + 20 %>
   </div>
 
   <div class="field">
-    <%= f.label :repeat %>
+    <%= f.label t('Repeat') %>
     <%= f.select :repeat, options_for_select(["every day", "every week", "every month", "every year"]) %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit t('.new_event') %>
   </div>
 <% end %>

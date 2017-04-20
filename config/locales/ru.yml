@@ -30,10 +30,47 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 ru:
-  hello: "Привет, мир!"
+  Back: "Назад"
+  Title: "Заголовок"
+  Event date: "Дата события"
+  Repeat: "Повтор"
   password: "Пароль"
   fullname: "Полное имя"
-  Log in: "Войти"
-  Sign up: "Зарегистрироваться"
-  or: "или"
   confirm: "Вы уверены?"
+
+  notice: 
+    not_logged_in: "Вы не вошли в систему"
+    event_created: "Событие успешно создано"
+    event_updated: "Событие успешно обновлено"
+    event_deleted: "Событие было удалено"
+    user_created: "Ваш профиль создан"
+    user_created: "Ваш профиль обновлен"
+    logged_in: "Вы вошли в систему"
+    logged_out: "Вы вышли из системы"
+
+  alert: 
+    invalid_log/pas: "Неправильный логин или пароль"
+
+  sessions:
+    new:
+      log_in: "Войти"
+      sign_up: "Зарегистрироваться"
+      or: "или"
+
+  users:
+    form:
+      new_user: "Создать нового пользователя"
+    show:
+      new_event: "Создать новое событие"
+      all_events: "Все события"
+
+  events:
+    form:
+      new_event: "Создать новое событие"
+    edit: 
+      delete: "Удалить событие"
+    index:
+      new_event: "Создать новое событие"
+      profile: "Мой профиль"
+      
+

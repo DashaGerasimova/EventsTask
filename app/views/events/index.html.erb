@@ -1,13 +1,15 @@
 
+<div><%= link_to t('profile'), profile_path %></div>
+
 <h1>Events</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Event date</th>
-      <th>Repeat</th>
-      <th>Author</th>
+      <th><%= t'Title' %></th>
+      <th><%= t'Event date' %></th>
+      <th><%= t'Repeat' %></th>
+      <th><%= t'Author' %></th>
     </tr>
   </thead>
 
@@ -25,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Event', new_event_path %>
+<%= link_to t('.new_event'), new_event_path %>

@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
 
   protected 
     def ensure_login
-    	redirect_to login_path, notice: "You're not logged in" unless session[:user_id]
+    	redirect_to login_path, notice: t("notice.not_logged_in") unless session[:user_id]
     end
 
     def logged_in?

@@ -1,22 +1,22 @@
 
 <p>
-  <strong>Title:</strong>
+  <strong><%= t'Title' %>:</strong>
   <%= @event.title %>
 </p>
 
 <p>
-  <strong>Event date:</strong>
+  <strong><%= t'Event date' %>:</strong>
   <%= @event.event_date %>
 </p>
 
 <p>
-  <strong>Repeat:</strong>
+  <strong><%= t'Repeat' %>:</strong>
   <%= @event.repeat %>
 </p>
 
 <p>
-  <strong>Author:</strong>
+  <strong><%= t'Author' %>:</strong>
   <%= @event.user.email %>
 </p>
 
-<%= link_to 'Back', events_path %>
+<%= link_to t('Back'), events_path %>

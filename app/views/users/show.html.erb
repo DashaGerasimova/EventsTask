@@ -10,13 +10,14 @@
   <%= link_to t('Logout'), logout_path, method: "delete" %>
 </div>
 
+<div> <%= t('my_events') %>
 <div class="events_list">
   <table>
     <thead>
       <tr>
-        <th>Title</th>
-        <th>Event date</th>
-        <th>Repeat</th>
+        <th><%= t'Title' %></th>
+        <th><%= t'Event date' %></th>
+        <th><%= t'Repeat' %></th>
       </tr>
     </thead>
 
@@ -30,6 +31,8 @@
       <% end %>
     </tbody>
   </table>
-  <%= link_to t('New Event'), new_event_path %>
+  <%= link_to t('.new_event'), new_event_path %>
+  <br>
+  <%= link_to t('.all_events'), events_path %>
 </div>
 

@@ -30,11 +30,49 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  Back: "Back"
+  Title: "Title"
+  Event date: "Event date"
+  Repeat: "Repeat"
   password: "Password"
   fullname: "Full name"
-  Log in: "Log In"
-  Sign up: "Sign Up"
-  or: "or"
-  nofullname: "no full name"
   confirm: "Are you sure?"
+
+  notice: 
+    not_logged_in: "You are not logged in"
+    event_created: "Event was successfully created"
+    event_updated: "Event was successfully updated"
+    event_deleted: "Event was deleted"
+    user_created: "Your profile was created"
+    user_created: "Your profile was updated"
+    logged_in: "You are logged in"
+    logged_out: "You are logged out"
+
+  alert: 
+    invalid_log/pas: "Invalid login/password"
+
+  sessions:
+    new:
+      log_in: "Log in"
+      sign_up: "Sign up"
+      or: "or"
+
+  users:
+    form:
+      new_user: "Create new user"
+    show:
+      new_event: "Create new event"
+      all_events: "Show all events"
+
+  events:
+    form:
+      new_event: "Create new event"
+    edit: 
+      delete: "Delete event"
+    index:
+      new_event: "Create new event"
+      profile: "My profile"
+
+
+
   

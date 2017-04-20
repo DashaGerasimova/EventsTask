@@ -4,9 +4,11 @@ class UsersController < ApplicationController
 
 
   def show
+    #/profile
   end
 
   def new
+    #/signup
     @user = User.new
   end
 
@@ -18,7 +20,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to profile_path, notice: t('notice.user_created') }
       else
         format.html { render :new }
       end
@@ -28,17 +30,10 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.html { redirect_to profile_path, notice: t('notice.user_updated') }
       else
         format.html { render :edit }
       end
-    end
-  end
-
-  def destroy
-    @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
     end
   end
 
