@@ -1,7 +1,9 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
-  before_action :set_locale
- 
+
+  before_action :set_locale, :ensure_login
+  helper_method :logged_in?, :current_user
+
   
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
@@ -10,4 +12,19 @@ class ApplicationController < ActionController::Base
   def default_url_options
   { locale: I18n.locale }
   end
+
+
+  protected 
+    def ensure_login
+    	redirect_to login_path, notice: "You're not logged in" unless session[:user_id]
+    end
+
+    def logged_in?
+    	session[:user_id]
+    end
+
+    def current_user
+    	@current_user ||= User.find(session[:user_id])
+    end
+
 end

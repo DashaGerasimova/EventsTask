@@ -1,11 +1,7 @@
 class UsersController < ApplicationController
+  skip_before_action :ensure_login
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-  # GET /users
-  # GET /users.json
-  def index
-    @users = User.all
-  end
 
   # GET /users/1
   # GET /users/1.json
@@ -20,6 +16,8 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
   end
+  #<%= link_to t'Edit', edit_user_path(@user) %> |
+  #<%= link_to t'Back', events_path %>
 
   def create
     @user = User.new(user_params)
@@ -27,10 +25,10 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
+        #format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        #format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -62,7 +60,7 @@ class UsersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
-      @user = User.find(params[:id])
+      @user = current_user
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
