@@ -31,9 +31,14 @@
 
 ru:
   Back: "Назад"
+  Edit: "Редактировать"
+  Logout: "Выйти"
+
   Title: "Заголовок"
   Event date: "Дата события"
   Repeat: "Повтор"
+  Author: "Автор"
+
   password: "Пароль"
   fullname: "Полное имя"
   confirm: "Вы уверены?"
@@ -53,24 +58,37 @@ ru:
 
   sessions:
     new:
-      log_in: "Войти"
-      sign_up: "Зарегистрироваться"
+      log_in_button: "Войти"
+      sign_up_button: "Зарегистрироваться"
       or: "или"
+      welcome: "Добро пожаловать в Календарь Событий"
+      sign_up_log_in_message: "Войдите или зарегистрируйтесь"
 
   users:
     form:
-      new_user: "Создать нового пользователя"
+      accept_button: "Принять"
+    new:
+      new_user_message: "Создание нового пользователя"
     show:
-      new_event: "Создать новое событие"
-      all_events: "Все события"
+      new_event_button: "Создать новое событие"
+      all_events_button: "Все события"
+      my_events_message: "Мои события"
+      profile_message: "Мой профиль"
+      nofullname_message: "Без имени"
+    edit: 
+      edit_user_message: "Редактирование пользователя"
 
   events:
     form:
-      new_event: "Создать новое событие"
+      accept_button: "Принять"
+    new: 
+      new_event_message: "Создание нового события"
     edit: 
-      delete: "Удалить событие"
+      delete_button: "Удалить событие"
+      edit_event_message: "Редактирование события"
     index:
-      new_event: "Создать новое событие"
-      profile: "Мой профиль"
+      new_event_button: "Создать новое событие"
+      profile_button: "Мой профиль"
+      calendar_of_events_message: "Календарь Событий"
       
 

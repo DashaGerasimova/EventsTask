@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
 
   def new 
     #/login
+    redirect_to profile_path if logged_in?
   end
 
   def create

@@ -31,9 +31,14 @@
 
 en:
   Back: "Back"
+  Edit: "Edit"
+  Logout: "Logout"
+
   Title: "Title"
   Event date: "Event date"
   Repeat: "Repeat"
+  Author: "Author"
+  
   password: "Password"
   fullname: "Full name"
   confirm: "Are you sure?"
@@ -53,25 +58,38 @@ en:
 
   sessions:
     new:
-      log_in: "Log in"
-      sign_up: "Sign up"
+      log_in_button: "Log in"
+      sign_up_button: "Sign up"
       or: "or"
+      welcome: "Welcome to the Calendar of Events"
+      sign_up_log_in_message: "Sign up or log in"
 
   users:
     form:
-      new_user: "Create new user"
+      accept_button: "Accept"
+    new:
+      new_user_message: "Creating a new user"
     show:
-      new_event: "Create new event"
-      all_events: "Show all events"
+      new_event_button: "Create new event"
+      all_events_button: "Show all events"
+      my_events_message: "My events"
+      profile_message: "My profile"
+      nofullname_message: "No name"
+    edit: 
+      edit_user_message: "Editing user"
 
   events:
     form:
-      new_event: "Create new event"
+      accept_button: "Accept"
+    new: 
+      new_event_message: "Creating event"
     edit: 
-      delete: "Delete event"
+      delete_button: "Delete event"
+      edit_event_message: "Editing event"
     index:
-      new_event: "Create new event"
-      profile: "My profile"
+      new_event_button: "Create new event"
+      profile_button: "My profile"
+      calendar_of_events_message: "Calendar of Events"
 
 
 

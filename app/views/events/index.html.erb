@@ -1,7 +1,7 @@
 
-<div><%= link_to t('profile'), profile_path %></div>
+<div><%= link_to t('.profile_button'), profile_path %></div>
 
-<h1>Events</h1>
+<h1><%= t('.calendar_of_events_message') %></h1>
 
 <table>
   <thead>
@@ -27,4 +27,4 @@
 
 <br>
 
-<%= link_to t('.new_event'), new_event_path %>
+<%= link_to t('.new_event_button'), new_event_path %>
