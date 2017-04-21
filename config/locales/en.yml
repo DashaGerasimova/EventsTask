@@ -49,7 +49,7 @@ en:
     event_updated: "Event was successfully updated"
     event_deleted: "Event was deleted"
     user_created: "Your profile was created"
-    user_created: "Your profile was updated"
+    user_updated: "Your profile was updated"
     logged_in: "You are logged in"
     logged_out: "You are logged out"
 
@@ -72,7 +72,7 @@ en:
     show:
       new_event_button: "Create new event"
       all_events_button: "Show all events"
-      my_events_message: "My events"
+      my_events_message: "My events(edit)"
       profile_message: "My profile"
       nofullname_message: "No name"
     edit: 
@@ -88,7 +88,7 @@ en:
       edit_event_message: "Editing event"
     index:
       new_event_button: "Create new event"
-      profile_button: "My profile"
+      profile_button: "My profile and my events"
       calendar_of_events_message: "Calendar of Events"
 
 

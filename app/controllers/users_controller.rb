@@ -20,7 +20,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to profile_path, notice: t('notice.user_created') }
+        format.html { redirect_to login_path, notice: t('notice.user_created') }
       else
         format.html { render :new }
       end

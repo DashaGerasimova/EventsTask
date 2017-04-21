@@ -49,7 +49,7 @@ ru:
     event_updated: "Событие успешно обновлено"
     event_deleted: "Событие было удалено"
     user_created: "Ваш профиль создан"
-    user_created: "Ваш профиль обновлен"
+    user_updated: "Ваш профиль обновлен"
     logged_in: "Вы вошли в систему"
     logged_out: "Вы вышли из системы"
 
@@ -72,7 +72,7 @@ ru:
     show:
       new_event_button: "Создать новое событие"
       all_events_button: "Все события"
-      my_events_message: "Мои события"
+      my_events_message: "Мои события (редактировать)"
       profile_message: "Мой профиль"
       nofullname_message: "Без имени"
     edit: 
@@ -88,7 +88,7 @@ ru:
       edit_event_message: "Редактирование события"
     index:
       new_event_button: "Создать новое событие"
-      profile_button: "Мой профиль"
+      profile_button: "Мой профиль и мои события"
       calendar_of_events_message: "Календарь Событий"
       
 

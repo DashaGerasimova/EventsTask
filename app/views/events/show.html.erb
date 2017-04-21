@@ -1,22 +1,26 @@
+<div class="card">
+  <div clas="card-section">
+	<p>
+	  <strong><%= t'Title' %>:</strong>
+	  <%= @event.title %>
+	</p>
 
-<p>
-  <strong><%= t'Title' %>:</strong>
-  <%= @event.title %>
-</p>
+	<p>
+	  <strong><%= t'Event date' %>:</strong>
+	  <%= @event.event_date %>
+	</p>
 
-<p>
-  <strong><%= t'Event date' %>:</strong>
-  <%= @event.event_date %>
-</p>
+	<p>
+	  <strong><%= t'Repeat' %>:</strong>
+	  <%= @event.repeat %>
+	</p>
 
-<p>
-  <strong><%= t'Repeat' %>:</strong>
-  <%= @event.repeat %>
-</p>
+	<p>
+	  <strong><%= t'Author' %>:</strong>
+	  <%= @event.user.email %>
+	</p>
+  </div>
 
-<p>
-  <strong><%= t'Author' %>:</strong>
-  <%= @event.user.email %>
-</p>
+</div>
 
-<%= link_to t('Back'), events_path %>
+<%= link_to t('Back'), events_path, class: "expanded hollow button" %>

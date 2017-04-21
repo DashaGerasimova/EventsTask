@@ -1,5 +1,9 @@
-<h1><%= t'new_user_message' %></h1>
+<div class="form_block">
 
-<%= render 'form', user: @user %>
+  <h3><%= t'.new_user_message' %></h3>
 
-<%= link_to t('Back'), login_path %>
+  <%= render 'form', user: @user %>
+
+  <%= link_to t('Back'), login_path, class:"expanded hollow button" %>
+
+</div>

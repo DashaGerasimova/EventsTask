@@ -1,7 +1,7 @@
 
-<h1><%= t('.profile_message') %></h1>
+<h3><%= t('.profile_message') %></h1>
 
-<div class="user_info">
+<div>
   <strong>email:</strong>
   <%= @user.email %>
   |
@@ -11,6 +11,8 @@
   <%= link_to t('Edit'), edit_user_path(@user.id) %>
   <%= link_to t('Logout'), logout_path, method: "delete" %>
 </div>
+
+<br>
 
 <div> <%= t('.my_events_message') %>
 <div class="events_list">
@@ -33,8 +35,7 @@
       <% end %>
     </tbody>
   </table>
-  <%= link_to t('.new_event_button'), new_event_path %>
-  <br>
-  <%= link_to t('.all_events_button'), events_path %>
+  <%= link_to t('.new_event_button'), new_event_path, class:"expanded button" %>
+  <%= link_to t('.all_events_button'), events_path, class:"expanded button" %>
 </div>
 

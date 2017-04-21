@@ -1,8 +1,10 @@
 
-<div class="login_page">  
+<div class="form_block">  
 
-  <h1><%= t('.welcome') %></h1>
-  <h1><%= t('.sign_up_log_in_message') %></h1>
+  <div>
+    <h3><%= t('.welcome') %></h3>
+    <h5><%= t('.sign_up_log_in_message') %></h5>
+  </div>
 
   <%= form_for(:user, url: sessions_path) do |f| %>
 
@@ -19,7 +21,7 @@
     </div>
 
     <div class="actions">
-        <%= f.submit t'.log_in_button' %> <%= t'.or' %> <%= link_to t('.sign_up_button'), signup_path, class: "button_class"  %>
+        <%= f.submit t'.log_in_button' %> <%= t'.or' %> <%= link_to t('.sign_up_button'), signup_path, class:"link"  %>
     </div>
 
   <% end %>

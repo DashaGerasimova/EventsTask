@@ -12,20 +12,49 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+ *= require foundation
+
+
  */
+body {
+	background-image: url(https://oblast45.ru/uploads/publications/7277/2f984c1e7d4fbae693b5109e85ef8bbdb4364afc.jpg);
+}
 
-.login_page {
+table {
+	color: black;
+}
+
+
+.block {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(54, 54, 54, 0.8);
+  padding: 20px;
+  color: #fefefe;
+  margin: auto;
 
 }
 
-.events_list {
-
+.form_block label {
+	color: #A9A9A9;
 }
 
-.user_info {
-
+.link {
+	color: #fefefe;
 }
 
-.language_buttons {
-	
+.lang_buttons {
+
+  background-color: #ffffff;
+  text-align: center;
+  color: #A9A9A9;
+  
 }
+
+.expanded.button {
+  color: white;
+}
+
+
+
