@@ -28,7 +28,7 @@
     <tbody>
       <% @user.events.each do |event| %>
         <tr>
-          <td><%= link_to event.title, edit_event_path(event) %></td>
+          <td><%= link_to "#{event.title} (#{t('Edit')})", edit_event_path(event) %></td>
           <td><%= event.event_date %></td>
           <td><%= event.repeat %></td>
         </tr>

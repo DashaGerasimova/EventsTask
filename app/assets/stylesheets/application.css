@@ -56,5 +56,18 @@ table {
   color: white;
 }
 
+a:link { 
+  color: #7e7e7c;
+}
+a:visited { 
+  color: #7e7e7c;
+}
+a:hover { 
+  color: #CCCCCC;
+}
+a:active { 
+  color:  #0c2aa6;
+}
+
 
 
