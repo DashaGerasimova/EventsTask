@@ -2,4 +2,4 @@
 
 <%= render 'form', event: @event %> 
 <%= link_to t('.delete_button'), @event, method: :delete, data: { confirm: t('confirm')}, class:"expanded alert button" %>
-<%= link_to t('Back'), events_path, class: "expanded hollow button" %>
+<%= link_to t('Back'), user_path, class: "expanded hollow button" %>
