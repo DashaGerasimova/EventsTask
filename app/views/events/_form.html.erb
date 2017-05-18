@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label t('Repeat') %>
-    <%= f.select :repeat, options_for_select([["every day", 0], ["every week", 1], ["every month", 2], ["every year", 3]]) %>
+    <%= f.select :repeat, options_for_select([[t("every_day"), 0], [t("every_week"), 1], [t("every_month"), 2], [t("every_year"), 3]]) %>
   </div>
 
   <div class="actions">

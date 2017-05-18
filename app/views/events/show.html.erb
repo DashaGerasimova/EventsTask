@@ -12,7 +12,7 @@
 
 	<p>
 	  <strong><%= t'Repeat' %>:</strong>
-	  <%= @event.repeat %>
+	  <%= t(ApplicationHelper::CustomTranslation.repeat(@event.repeat)) %>
 	</p>
 
 	<p>

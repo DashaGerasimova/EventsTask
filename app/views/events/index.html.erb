@@ -18,7 +18,7 @@
       <tr>
         <td><%= link_to event.title, event %></td>
         <td><%= event.event_date %></td>
-        <td><%= event.repeat %></td>
+        <td><%= t(ApplicationHelper::CustomTranslation.repeat(event.repeat)) %></td>
         <td><%= event.user.email %></td>
       </tr>
     <% end %>

@@ -36,8 +36,13 @@ en:
 
   Title: "Title"
   Event date: "Event date"
-  Repeat: "Repeat"
   Author: "Author"
+
+  Repeat: "Repeat"
+  every_day: "Every day"
+  every_week: "Every week"
+  every_month: "Every month"
+  every_year: "Every year"
   
   password: "Password"
   fullname: "Full name"
