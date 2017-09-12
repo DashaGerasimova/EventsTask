@@ -33,6 +33,14 @@ gem 'validates_email_format_of'
 #support for additional languages
 gem 'rails-i18n'
 
+#gem for authentication
+gem 'devise'
+#gem for views
+gem 'slim'
+
+gem 'decent_exposure'
+gem 'responders'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
