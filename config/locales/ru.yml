@@ -70,20 +70,13 @@ ru:
       welcome: "Добро пожаловать в Календарь Событий"
       sign_up_log_in_message: "Войдите или зарегистрируйтесь"
 
-  users:
-    form:
-      accept_button: "Принять"
-    new:
-      new_user_message: "Создание нового пользователя"
-    show:
-      new_event_button: "Создать новое событие"
-      all_events_button: "Все события"
-      my_events_message: "Мои события (редактировать)"
-      profile_message: "Мой профиль"
-      nofullname_message: "Без имени"
-    edit: 
-      edit_user_message: "Редактирование пользователя"
-
+  profile:
+    new_event_button: "Создать новое событие"
+    all_events_button: "Все события"
+    my_events_message: "Мои события (редактировать)"
+    title: "Мой профиль"
+    nofullname_message: "Без имени"
+   
   events:
     form:
       accept_button: "Принять"

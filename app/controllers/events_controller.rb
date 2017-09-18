@@ -2,7 +2,7 @@ class EventsController < ApplicationController
   expose(:events) { Event.all }
   expose :event
 
-  before_action :autheticate_user!, except: :index
+  before_action :authenticate_user!, except: :index
 
   def index
   end
