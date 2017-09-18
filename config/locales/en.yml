@@ -69,19 +69,12 @@ en:
       welcome: "Welcome to the Calendar of Events"
       sign_up_log_in_message: "Sign up or log in"
 
-  users:
-    form:
-      accept_button: "Accept"
-    new:
-      new_user_message: "Creating a new user"
-    show:
-      new_event_button: "Create new event"
-      all_events_button: "Show all events"
-      my_events_message: "My events(edit)"
-      profile_message: "My profile"
-      nofullname_message: "No name"
-    edit: 
-      edit_user_message: "Editing user"
+  profile:
+    new_event_button: "Create new event"
+    all_events_button: "Show all events"
+    my_events_message: "My events(edit)"
+    title: "My profile"
+    nofullname_message: "No name"
 
   events:
     form:

@@ -1,4 +1,4 @@
-h3= t('.profile_message')
+h3= t('profile.title')
 div
   strong email:
   = user.email
@@ -7,7 +7,7 @@ div
   = link_to t('Logout'), destroy_user_session_url, method: "delete"
 br/
 div
-  = t('.my_events_message')
+  = t('profile.my_events_message')
   .events_list
     table
       thead
@@ -20,6 +20,6 @@ div
           tr
             td= link_to "#{event.title} (#{t('Edit')} )", edit_event_path(event)
             td= event.event_date
-            td= t(ApplicationHelper::CustomTranslation.repeat(event.repeat))
-    = link_to t('.new_event_button'), new_event_path, class:"expanded button"
-    = link_to t('.all_events_button'), events_path, class:"expanded button"
+            td= event.repeat
+    = link_to t('profile.new_event_button'), new_event_path, class:"expanded button"
+    = link_to t('profile.all_events_button'), events_path, class:"expanded button"

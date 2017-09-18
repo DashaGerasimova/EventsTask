@@ -3,21 +3,21 @@
     p
       strong
         = t'Title'
-        | \:
-      = @event.title
+        | :
+      = event.title
     p
       strong
         = t'Event date'
-        | \:
-      = @event.event_date
+        | :
+      = event.event_date
     p
       strong
         = t'Repeat'
-        | \:
-      = t(ApplicationHelper::CustomTranslation.repeat(@event.repeat))
+        | :
+      = event.repeat
     p
       strong
         = t'Author'
-        | \:
-      = @event.user.email
+        | :
+      = event.user.email
 = link_to t('Back'), events_path, class: "expanded hollow button"

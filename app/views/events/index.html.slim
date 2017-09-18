@@ -9,10 +9,10 @@ table
       th= t'Repeat'
       th= t'Author'
   tbody
-    - @events.each do |event|
+    - events.each do |event|
       tr
         td= link_to event.title, event
         td= event.event_date
-        td= t(ApplicationHelper::CustomTranslation.repeat(event.repeat))
+        td= event.repeat
         td= event.user.email
 = link_to t('.new_event_button'), new_event_path, class:"button expanded"
