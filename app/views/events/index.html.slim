@@ -1,0 +1,18 @@
+div= link_to t('.profile_button'), profile_path
+h3
+  = t('.calendar_of_events_message')
+table
+  thead
+    tr
+      th= t'Title'
+      th= t'Event date'
+      th= t'Repeat'
+      th= t'Author'
+  tbody
+    - @events.each do |event|
+      tr
+        td= link_to event.title, event
+        td= event.event_date
+        td= t(ApplicationHelper::CustomTranslation.repeat(event.repeat))
+        td= event.user.email
+= link_to t('.new_event_button'), new_event_path, class:"button expanded"
