@@ -5,17 +5,13 @@ class EventsController < ApplicationController
 
   before_action :authenticate_user!, except: :index
 
-  def index
-  end
+  def index; end
 
-  def show
-  end
+  def show; end
 
-  def new
-  end
+  def new; end
 
-  def edit
-  end
+  def edit; end
 
   def create
     current_user.events << event
@@ -36,8 +32,7 @@ class EventsController < ApplicationController
 
   private
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def event_params
-      params.require(:event).permit(:title, :event_date, :repeat)
-    end
+  def event_params
+    params.require(:event).permit(:title, :event_date, :repeat)
+  end
 end
