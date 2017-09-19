@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+  respond_to :html
   expose(:events) { Event.all }
   expose :event
 
