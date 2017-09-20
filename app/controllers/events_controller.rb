@@ -1,7 +1,7 @@
 class EventsController < ApplicationController
   respond_to :html
-  expose(:events) { Event.all }
-  expose :event
+  expose(:events) { Event.all.decorate }
+  expose_decorated :event
 
   before_action :authenticate_user!, except: :index
 

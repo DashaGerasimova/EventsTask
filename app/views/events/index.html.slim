@@ -13,6 +13,6 @@ table
       tr
         td= link_to event.title, event
         td= event.event_date
-        td= event.repeat
+        td= event.translated_repeat
         td= event.user.email
 = link_to t('.new_event_button'), new_event_path, class:"button expanded"
